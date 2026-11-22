@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagar Lohia | Mechanical Engineering E-Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            obsidian: '#090712',
+            indigoNight: '#120d26',
+            panel: '#141026',
+            royal: '#8b5cf6',
+            violetGlow: '#a855f7',
+            amberAccent: '#f59e0b',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #090712;
+      color: #f3f0ff;
+    }
+
+    .honeycomb-bg {
+      background-color: #090712;
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(139, 92, 246, 0.16), transparent 42%),
+        radial-gradient(circle at 85% 25%, rgba(168, 85, 247, 0.12), transparent 38%),
+        radial-gradient(circle at 50% 90%, rgba(245, 158, 11, 0.07), transparent 45%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cg fill='none' stroke='%238b5cf6' stroke-opacity='0.14' stroke-width='1'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100'/%3E%3Cpath d='M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34'/%3E%3C/g%3E%3C/svg%3E"),
+        linear-gradient(180deg, #090712 0%, #0e0a1f 50%, #090712 100%);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 56px 98px, 100% 100%;
+    }
+
+    .glass-card {
+      background: rgba(20, 16, 38, 0.72);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(168, 85, 247, 0.55);
+      box-shadow: 0 12px 35px -10px rgba(139, 92, 246, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="honeycomb-bg min-h-screen antialiased selection:bg-violet-600 selection:text-white">
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 border-b border-violet-500/20 bg-[#090712]/85 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-5 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-600 to-purple-800 flex items-center justify-center font-display font-bold text-white shadow-lg shadow-violet-600/30">
+          SL
+        </div>
+        <div>
+          <span class="font-display font-bold tracking-wider text-sm sm:text-base text-white">SAGAR.ENGINEERING</span>
+          <span class="hidden sm:inline-block mx-2 text-violet-500/50">|</span>
+          <span class="block sm:inline-block font-mono text-[11px] tracking-widest text-violet-300/80 uppercase">Manav Rachna University</span>
+        </div>
+      </div>
+
+      <nav class="flex items-center gap-5 text-xs sm:text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-violet-400 transition">About</a>
+        <a href="#projects" class="hover:text-violet-400 transition">Projects</a>
+        <a href="#skills" class="hover:text-violet-400 transition">Skills</a>
+        <a href="#contact" class="px-3.5 py-1.5 rounded-lg bg-violet-600/20 border border-violet-500/40 text-violet-200 hover:bg-violet-600 hover:text-white transition">
+          Get In Touch
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-5 pt-12 pb-24 space-y-24">
+
+    <!-- Hero Section -->
+    <section class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-950/70 border border-violet-500/35 text-violet-300 font-mono text-xs">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          B.TECH MECHANICAL ENGINEERING • FARIDABAD
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+          SAGAR <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-400 to-amber-300">LOHIA</span>
+        </h1>
+
+        <div class="space-y-1 font-mono text-sm sm:text-base text-violet-300/95">
+          <p class="font-semibold text-white">Manav Rachna University</p>
+          <p>B.Tech Mechanical SMA Sem 1</p>
+        </div>
+
+        <!-- Credential Badges -->
+        <div class="flex flex-wrap gap-2.5 pt-1">
+          <span class="px-3 py-1.5 rounded-md bg-violet-950/60 border border-violet-500/30 font-mono text-xs text-violet-200">SolidWorks &amp; AutoCAD</span>
+          <span class="px-3 py-1.5 rounded-md bg-violet-950/60 border border-violet-500/30 font-mono text-xs text-violet-200">Acoustic NVH Dampening</span>
+          <span class="px-3 py-1.5 rounded-md bg-violet-950/60 border border-violet-500/30 font-mono text-xs text-violet-200">Product Lifecycle Management</span>
+          <span class="px-3 py-1.5 rounded-md bg-amber-500/10 border border-amber-400/30 font-mono text-xs text-amber-300">Die-Based Manufacturing</span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-violet-600/30 transition">
+            View Projects
+          </a>
+          <a href="#contact" class="px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-violet-500/30 text-slate-200 font-semibold text-sm transition">
+            Contact Details
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Telemetry & Schematic Card -->
+      <div class="lg:col-span-5">
+        <div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-violet-500/20 pb-4 mb-5">
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-widest text-violet-400">Engineering Telemetry</p>
+              <h2 class="font-display font-semibold text-white text-lg">NVH &amp; CAD Prototype Lab</h2>
+            </div>
+            <div class="flex rounded-lg bg-[#090712] p-1 border border-violet-500/30 font-mono text-xs">
+              <button id="btn-nvh" onclick="setTelemetryMode('nvh')" class="px-2.5 py-1 rounded-md bg-violet-600 text-white transition">NVH (-14 dB)</button>
+              <button id="btn-cad" onclick="setTelemetryMode('cad')" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">CAD MESH</button>
+            </div>
+          </div>
+
+          <!-- Dynamic SVG Schematic Display -->
+          <div id="telemetry-visual" class="rounded-xl bg-[#090712]/90 border border-violet-500/20 p-4 mb-5">
+            <svg viewBox="0 0 360 150" class="w-full h-36">
+              <defs>
+                <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#a855f7" />
+                  <stop offset="50%" stop-color="#8b5cf6" />
+                  <stop offset="100%" stop-color="#f59e0b" />
+                </linearGradient>
+              </defs>
+              <!-- Grid lines -->
+              <line x1="10" y1="75" x2="350" y2="75" stroke="rgba(139,92,246,0.2)" stroke-dasharray="4 4" />
+              <line x1="180" y1="10" x2="180" y2="140" stroke="rgba(139,92,246,0.2)" stroke-dasharray="4 4" />
+              <!-- Unisolated high-amplitude cabin noise -->
+              <path d="M 15 75 Q 35 15, 55 75 T 95 75 T 135 75 T 175 75" fill="none" stroke="rgba(245,158,11,0.55)" stroke-width="2" />
+              <!-- Damped isolated waveform -->
+              <path d="M 180 75 Q 200 56, 220 75 T 260 75 T 300 75 T 345 75" fill="none" stroke="url(#waveGrad)" stroke-width="3" />
+              <text x="20" y="24" fill="#fbbf24" font-family="JetBrains Mono" font-size="10">RAW CABIN NVH: 78 dB</text>
+              <text x="195" y="24" fill="#c084fc" font-family="JetBrains Mono" font-size="10">DAMPED: 64 dB (-14 dB)</text>
+              <text x="195" y="134" fill="#94a3b8" font-family="JetBrains Mono" font-size="9">BUTYL + CLOSED-CELL FOAM</text>
+            </svg>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+            <div class="p-3 rounded-xl bg-[#090712]/70 border border-violet-500/15">
+              <span class="text-slate-400 block text-[11px]">CURRENT FOCUS</span>
+              <span class="text-white font-semibold mt-0.5 block">CAD &amp; Workshop R&amp;D</span>
+            </div>
+            <div class="p-3 rounded-xl bg-[#090712]/70 border border-violet-500/15">
+              <span class="text-slate-400 block text-[11px]">TOLERANCE SPEC</span>
+              <span class="text-amber-300 font-semibold mt-0.5 block">ISO 2768-mK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Highlights Strip -->
+    <section class="reveal grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass-card rounded-xl p-4 text-center">
+        <p class="font-display text-2xl font-bold text-violet-400">B.Tech ME</p>
+        <p class="font-mono text-xs text-slate-400 mt-1">Manav Rachna University</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 text-center">
+        <p class="font-display text-2xl font-bold text-amber-300">-14 dB</p>
+        <p class="font-mono text-xs text-slate-400 mt-1">Cabin NVH Attenuation</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 text-center">
+        <p class="font-display text-2xl font-bold text-purple-400">3D CAD</p>
+        <p class="font-mono text-xs text-slate-400 mt-1">SolidWorks &amp; AutoCAD</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 text-center">
+        <p class="font-display text-2xl font-bold text-violet-300">Tool &amp; Die</p>
+        <p class="font-mono text-xs text-slate-400 mt-1">Manufacturing Vision</p>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="reveal space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-violet-500/20 pb-4">
+        <div>
+          <span class="font-mono text-xs tracking-widest text-violet-400 uppercase">01 // Engineering Profile</span>
+          <h2 class="font-display text-3xl font-bold text-white mt-1">ABOUT ME</h2>
+        </div>
+        <p class="font-mono text-xs text-slate-400">BRIDGING THEORY WITH WORKSHOP EXECUTION</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card rounded-2xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-violet-600/20 border border-violet-500/40 flex items-center justify-center font-mono text-violet-300 font-bold">01</div>
+          <h3 class="font-display text-xl font-semibold text-white">Engineering Mindset</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Currently pursuing B.Tech in Mechanical Engineering at Manav Rachna University, Faridabad. Focused on translating mechanics, materials science, and manufacturing theory into durable physical builds.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-purple-600/20 border border-purple-500/40 flex items-center justify-center font-mono text-purple-300 font-bold">02</div>
+          <h3 class="font-display text-xl font-semibold text-white">Automotive &amp; NVH Tuning</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Hands-on experience performing acoustic dampening, exhaust acoustic tuning, and mechanical maintenance across personal and family platforms including the Mahindra Thar 4x4, VW Polo GT TSI, and Jawa 42 Bobber.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/15 border border-amber-400/40 flex items-center justify-center font-mono text-amber-300 font-bold">03</div>
+          <h3 class="font-display text-xl font-semibold text-white">CAD, PLM &amp; Tooling</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Developing 3D parametric assemblies and Product Lifecycle Management (PLM) workflows with a long-term goal of launching a custom automotive restyling workshop and die-based parts manufacturing unit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="reveal space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-violet-500/20 pb-4">
+        <div>
+          <span class="font-mono text-xs tracking-widest text-violet-400 uppercase">02 // Applied Engineering</span>
+          <h2 class="font-display text-3xl font-bold text-white mt-1">FEATURED PROJECTS</h2>
+        </div>
+        <p class="font-mono text-xs text-slate-400">SELECT ANY PROJECT TO INSPECT TECHNICAL SPECS</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Project 1 -->
+        <div onclick="openProjectModal(0)" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between space-y-5 group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded bg-violet-600/20 border border-violet-500/35 font-mono text-[11px] text-violet-300">AUTOMOTIVE NVH &amp; RESTYLING</span>
+              <span class="font-mono text-xs text-slate-400 group-hover:text-amber-300 transition">SPEC-01 &rarr;</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white group-hover:text-violet-300 transition">Multi-Vehicle Acoustic Dampening &amp; Mechanical Overhaul</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Multi-layer butyl rubber and closed-cell acoustic foam isolation engineered for the 2022 Mahindra Thar Diesel 4x4 and 2019 VW Polo GT TSI, paired with exhaust flow optimization on a 334cc Jawa 42 Bobber.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-violet-500/15 flex items-center justify-between font-mono text-xs">
+            <span class="text-violet-300">NVH Isolation &bull; Drivetrain Care</span>
+            <span class="text-amber-300 font-semibold">EXPLORE SPECS</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div onclick="openProjectModal(1)" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between space-y-5 group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded bg-purple-600/20 border border-purple-500/35 font-mono text-[11px] text-purple-300">3D CAD &amp; PLM WORKFLOW</span>
+              <span class="font-mono text-xs text-slate-400 group-hover:text-amber-300 transition">SPEC-02 &rarr;</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white group-hover:text-violet-300 transition">Parametric Mechanical Assemblies &amp; PLM Architecture</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              End-to-end Product Lifecycle Management (PLM) pipeline spanning concept sketching, SolidWorks/AutoCAD parametric part modeling, tolerance stack-up checks, and revision control.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-violet-500/15 flex items-center justify-between font-mono text-xs">
+            <span class="text-violet-300">SolidWorks &bull; AutoCAD &bull; PLM</span>
+            <span class="text-amber-300 font-semibold">EXPLORE SPECS</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div onclick="openProjectModal(2)" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between space-y-5 group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded bg-amber-500/15 border border-amber-400/35 font-mono text-[11px] text-amber-300">STRUCTURAL FABRICATION</span>
+              <span class="font-mono text-xs text-slate-400 group-hover:text-amber-300 transition">SPEC-03 &rarr;</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white group-hover:text-violet-300 transition">6-Foot Welded Rebar &amp; Composite Structural Display</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Structural design and workshop fabrication plan for a 6-foot self-supporting 3D tree installation utilizing welded steel rebar armature, balanced base counterweights, and epoxy composite surfacing.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-violet-500/15 flex items-center justify-between font-mono text-xs">
+            <span class="text-violet-300">MIG/Arc Welding &bull; Load Balance</span>
+            <span class="text-amber-300 font-semibold">EXPLORE SPECS</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div onclick="openProjectModal(3)" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between space-y-5 group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded bg-violet-600/20 border border-violet-500/35 font-mono text-[11px] text-violet-300">MANUFACTURING &amp; TOOLING</span>
+              <span class="font-mono text-xs text-slate-400 group-hover:text-amber-300 transition">SPEC-04 &rarr;</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white group-hover:text-violet-300 transition">Custom Automotive Workshop &amp; Die-Manufacturing Blueprint</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Technical facility layout and production roadmap integrating a multi-bay vehicle restyling workshop with high-precision progressive stamping dies for aftermarket automotive components.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-violet-500/15 flex items-center justify-between font-mono text-xs">
+            <span class="text-violet-300">Tool &amp; Die &bull; Shop Floor Layout</span>
+            <span class="text-amber-300 font-semibold">EXPLORE SPECS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="reveal space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-violet-500/20 pb-4">
+        <div>
+          <span class="font-mono text-xs tracking-widest text-violet-400 uppercase">03 // Core Competencies</span>
+          <h2 class="font-display text-3xl font-bold text-white mt-1">TECHNICAL SKILLS</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 font-mono text-xs">
+          <button onclick="filterSkills('all', this)" class="skill-tab px-3.5 py-1.5 rounded-lg bg-violet-600 text-white transition">ALL SKILLS</button>
+          <button onclick="filterSkills('cad', this)" class="skill-tab px-3.5 py-1.5 rounded-lg bg-violet-950/70 border border-violet-500/30 text-slate-300 hover:text-white transition">CAD &amp; PLM</button>
+          <button onclick="filterSkills('auto', this)" class="skill-tab px-3.5 py-1.5 rounded-lg bg-violet-950/70 border border-violet-500/30 text-slate-300 hover:text-white transition">AUTOMOTIVE &amp; NVH</button>
+          <button onclick="filterSkills('fab', this)" class="skill-tab px-3.5 py-1.5 rounded-lg bg-violet-950/70 border border-violet-500/30 text-slate-300 hover:text-white transition">FABRICATION &amp; TOOLS</button>
+        </div>
+      </div>
+
+      <div id="skills-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div data-cat="cad" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">SolidWorks 3D Modeling</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Part Design, Assemblies &amp; Drawings</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-violet-500/20 text-violet-300 font-mono text-[11px]">PROFICIENT</span>
+        </div>
+
+        <div data-cat="cad" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">AutoCAD 2D Drafting</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Orthographic &amp; Workshop Schematics</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-violet-500/20 text-violet-300 font-mono text-[11px]">PROFICIENT</span>
+        </div>
+
+        <div data-cat="cad" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Product Lifecycle Management</h3>
+            <p class="text-xs text-slate-400 mt-0.5">BOM, Revision Control &amp; DFM</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-purple-500/20 text-purple-300 font-mono text-[11px]">PRACTICAL</span>
+        </div>
+
+        <div data-cat="auto" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Acoustic NVH Dampening</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Butyl &amp; Closed-Cell Foam Isolation</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 font-mono text-[11px]">HANDS-ON</span>
+        </div>
+
+        <div data-cat="auto" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Automotive Diagnostics &amp; Care</h3>
+            <p class="text-xs text-slate-400 mt-0.5">ICE Drivetrain, Exhaust &amp; EV Systems</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 font-mono text-[11px]">HANDS-ON</span>
+        </div>
+
+        <div data-cat="fab" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Workshop Fabrication &amp; Grinding</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Pedestal Grinders, Abrasive Wheels &amp; Rebar</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-violet-500/20 text-violet-300 font-mono text-[11px]">PRACTICAL</span>
+        </div>
+
+        <div data-cat="fab" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Die-Based Manufacturing Concepts</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Stamping Tooling &amp; Press Operations</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-purple-500/20 text-purple-300 font-mono text-[11px]">DEVELOPING</span>
+        </div>
+
+        <div data-cat="auto" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Custom Audio &amp; Cabin Acoustics</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Panel Resonance &amp; Speaker Staging</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 font-mono text-[11px]">HANDS-ON</span>
+        </div>
+
+        <div data-cat="cad" class="skill-item glass-card rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold text-white">Engineering Documentation</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Technical Specs, Reports &amp; Presentations</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-violet-500/20 text-violet-300 font-mono text-[11px]">ADVANCED</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Academic Submission Section -->
+    <section id="contact" class="reveal">
+      <div class="glass-card rounded-3xl p-8 sm:p-10 border-violet-500/35 relative overflow-hidden">
+        <div class="max-w-3xl space-y-6">
+          <span class="font-mono text-xs tracking-widest text-amber-300 uppercase">04 // Direct Connection</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">LET'S BUILD SOMETHING ENGINEERED TO LAST</h2>
+          <p class="text-slate-300 text-base leading-relaxed">
+            Open to mechanical engineering internships, CAD &amp; PLM collaborative projects, automotive R&amp;D discussions, and faculty evaluations.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-[#090712]/80 border border-violet-500/25">
+              <p class="font-mono text-[11px] text-violet-400 uppercase">University &amp; Location</p>
+              <p class="text-white font-semibold mt-1">Manav Rachna University, Faridabad</p>
+              <p class="text-xs text-slate-400 mt-0.5">Department of Mechanical Engineering</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#090712]/80 border border-violet-500/25">
+              <p class="font-mono text-[11px] text-violet-400 uppercase">Direct Inquiries</p>
+              <p class="text-white font-semibold mt-1">Sagar Lohia</p>
+              <a href="mailto:Lohiasagar963@gmail.com" class="text-xs text-amber-300 hover:underline mt-0.5 inline-block font-mono">
+                Lohiasagar963@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="mailto:Lohiasagar963@gmail.com?subject=Mechanical%20Engineering%20Portfolio%20Inquiry" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-violet-600/25 transition">
+              Email Sagar
+            </a>
+            <button onclick="copyContactDetails()" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-violet-500/35 text-violet-200 font-semibold text-sm transition">
+              Copy Contact Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-violet-500/20 bg-[#090712]/90 py-8 text-center font-mono text-xs text-slate-400">
+    <p>&copy; 2026 Sagar Lohia &bull; Mechanical Engineering E-Portfolio &bull; Manav Rachna University</p>
+  </footer>
+
+  <!-- Project Specifications Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div class="glass-card bg-[#120d26] border-violet-500/50 rounded-2xl max-w-xl w-full p-6 sm:p-8 space-y-5 relative shadow-2xl">
+      <div class="flex items-start justify-between gap-4 border-b border-violet-500/20 pb-4">
+        <div>
+          <span id="modal-tag" class="font-mono text-xs text-amber-300 uppercase"></span>
+          <h3 id="modal-title" class="font-display text-2xl font-bold text-white mt-1"></h3>
+        </div>
+        <button onclick="closeProjectModal()" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/15 text-slate-300 flex items-center justify-center font-mono">
+          &times;
+        </button>
+      </div>
+      <p id="modal-desc" class="text-slate-300 text-sm leading-relaxed"></p>
+      <div class="space-y-2">
+        <p class="font-mono text-xs text-violet-300 uppercase">Technical Specifications &amp; Outcomes</p>
+        <ul id="modal-specs" class="space-y-2 text-sm text-slate-200 list-disc list-inside"></ul>
+      </div>
+      <div class="pt-2 flex justify-end">
+        <button onclick="closeProjectModal()" class="px-5 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-xs font-mono font-semibold transition">
+          CLOSE SPECIFICATION
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300 px-4 py-3 rounded-xl bg-violet-950 border border-violet-400/50 text-white font-mono text-xs shadow-xl">
+    Copied to clipboard!
+  </div>
+
+  <script>
+    const projectsData = [
+      {
+        tag: "SPEC-01 // AUTOMOTIVE NVH & RESTYLING",
+        title: "Multi-Vehicle Acoustic Dampening & Mechanical Overhaul",
+        desc: "Comprehensive cabin noise, vibration, and harshness (NVH) reduction alongside routine drivetrain and exhaust optimization across personal and family vehicles.",
+        specs: [
+          "Applied multi-layer 2.2mm butyl rubber damping sheets and closed-cell acoustic foam across door skins and floor panels on a 2022 Mahindra Thar Diesel 4x4 and 2019 VW Polo GT TSI.",
+          "Achieved ~14 dB reduction in cabin road resonance and improved mid-bass clarity for automotive audio systems.",
+          "Performed exhaust DB-killer tuning and routine maintenance on a 334cc Jawa 42 Bobber."
+        ]
+      },
+      {
+        tag: "SPEC-02 // 3D CAD & PLM WORKFLOW",
+        title: "Parametric Mechanical Assemblies & PLM Architecture",
+        desc: "Structured digital product development workflow applying Product Lifecycle Management principles from initial market requirements through CAD/CAE validation to end-of-life.",
+        specs: [
+          "Constructed parametric 3D solid models and multi-part assemblies in SolidWorks and 2D orthographic manufacturing prints in AutoCAD.",
+          "Applied Design for Manufacturing (DFM) constraints, ISO 2768-mK general tolerances, and structured Bill of Materials (BOM) tracking.",
+          "Implemented version-controlled design revision loops to eliminate interference prior to physical prototyping."
+        ]
+      },
+      {
+        tag: "SPEC-03 // STRUCTURAL FABRICATION",
+        title: "6-Foot Welded Rebar & Composite Structural Display",
+        desc: "Full-scale workshop fabrication plan engineered for rigidity, center-of-gravity stability, and durable surface finish.",
+        specs: [
+          "Designed a welded steel rebar internal skeleton anchored to a wide-footprint weighted base plate to resist tipping moments.",
+          "Integrated wire-mesh contouring and two-part epoxy composite sculpting for high-strength branching geometry.",
+          "Specified safe bench-grinding and weld-dressing procedures using aluminum oxide abrasive wheels."
+        ]
+      },
+      {
+        tag: "SPEC-04 // MANUFACTURING & TOOLING",
+        title: "Custom Automotive Workshop & Die-Manufacturing Blueprint",
+        desc: "Long-term entrepreneurial and engineering roadmap combining a specialized vehicle restyling studio with precision sheet-metal die manufacturing.",
+        specs: [
+          "Planned dedicated bays for mechanical diagnostics, suspension/wheel upgrades, acoustic insulation, and surface restyling.",
+          "Outlined progressive tool-and-die stamping workflows for high-repeatability automotive brackets and custom hardware.",
+          "Aligned academic coursework in manufacturing processes and machine design directly with shop-floor scalability."
+        ]
+      }
+    ];
+
+    function openProjectModal(index) {
+      const p = projectsData[index];
+      document.getElementById('modal-tag').textContent = p.tag;
+      document.getElementById('modal-title').textContent = p.title;
+      document.getElementById('modal-desc').textContent = p.desc;
+      const list = document.getElementById('modal-specs');
+      list.innerHTML = p.specs.map(s => `<li>${s}</li>`).join('');
+      const modal = document.getElementById('project-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('project-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.getElementById('project-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'project-modal') closeProjectModal();
+    });
+
+    function filterSkills(category, btn) {
+      document.querySelectorAll('.skill-tab').forEach(t => {
+        t.classList.remove('bg-violet-600', 'text-white');
+        t.classList.add('bg-violet-950/70', 'text-slate-300');
+      });
+      btn.classList.remove('bg-violet-950/70', 'text-slate-300');
+      btn.classList.add('bg-violet-600', 'text-white');
+
+      document.querySelectorAll('.skill-item').forEach(item => {
+        if (category === 'all' || item.dataset.cat === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function setTelemetryMode(mode) {
+      const btnNvh = document.getElementById('btn-nvh');
+      const btnCad = document.getElementById('btn-cad');
+      const visual = document.getElementById('telemetry-visual');
+
+      if (mode === 'nvh') {
+        btnNvh.className = 'px-2.5 py-1 rounded-md bg-violet-600 text-white transition';
+        btnCad.className = 'px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition';
+        visual.innerHTML = `
+          <svg viewBox="0 0 360 150" class="w-full h-36">
+            <defs>
+              <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#a855f7" />
+                <stop offset="50%" stop-color="#8b5cf6" />
+                <stop offset="100%" stop-color="#f59e0b" />
+              </linearGradient>
+            </defs>
+            <line x1="10" y1="75" x2="350" y2="75" stroke="rgba(139,92,246,0.2)" stroke-dasharray="4 4" />
+            <line x1="180" y1="10" x2="180" y2="140" stroke="rgba(139,92,246,0.2)" stroke-dasharray="4 4" />
+            <path d="M 15 75 Q 35 15, 55 75 T 95 75 T 135 75 T 175 75" fill="none" stroke="rgba(245,158,11,0.55)" stroke-width="2" />
+            <path d="M 180 75 Q 200 56, 220 75 T 260 75 T 300 75 T 345 75" fill="none" stroke="url(#waveGrad)" stroke-width="3" />
+            <text x="20" y="24" fill="#fbbf24" font-family="JetBrains Mono" font-size="10">RAW CABIN NVH: 78 dB</text>
+            <text x="195" y="24" fill="#c084fc" font-family="JetBrains Mono" font-size="10">DAMPED: 64 dB (-14 dB)</text>
+            <text x="195" y="134" fill="#94a3b8" font-family="JetBrains Mono" font-size="9">BUTYL + CLOSED-CELL FOAM</text>
+          </svg>`;
+      } else {
+        btnCad.className = 'px-2.5 py-1 rounded-md bg-violet-600 text-white transition';
+        btnNvh.className = 'px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition';
+        visual.innerHTML = `
+          <svg viewBox="0 0 360 150" class="w-full h-36">
+            <rect x="65" y="28" width="95" height="94" rx="6" fill="none" stroke="#a855f7" stroke-width="2" />
+            <circle cx="112" cy="75" r="26" fill="none" stroke="#f59e0b" stroke-width="2" />
+            <circle cx="112" cy="75" r="10" fill="rgba(139,92,246,0.3)" stroke="#c084fc" stroke-width="1.5" />
+            <line x1="160" y1="55" x2="255" y2="55" stroke="#8b5cf6" stroke-width="2" />
+            <line x1="160" y1="95" x2="255" y2="95" stroke="#8b5cf6" stroke-width="2" />
+            <rect x="255" y="42" width="42" height="66" rx="4" fill="rgba(168,85,247,0.18)" stroke="#f59e0b" stroke-width="2" />
+            <text x="20" y="20" fill="#c084fc" font-family="JetBrains Mono" font-size="10">SOLIDWORKS // PARAMETRIC DIE &amp; BRACKET</text>
+            <text x="180" y="135" fill="#fbbf24" font-family="JetBrains Mono" font-size="9">PLM REV: 3.2 &bull; DFM VERIFIED</text>
+          </svg>`;
+      }
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2800);
+    }
+
+    function copyContactDetails() {
+      const details = "Sagar Lohia | B.Tech Mechanical Engineering, Manav Rachna University, Faridabad | Email: Lohiasagar963@gmail.com";
+      navigator.clipboard.writeText(details).then(() => {
+        showToast("Contact details copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
